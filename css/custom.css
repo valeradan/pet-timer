@@ -1,0 +1,204 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../space2.png");
+    background-size: 100% auto;
+    height: 1000vh;
+    position: relative;
+}
+ 
+/* Стили меню */
+
+.menu-container {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 250px;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+.menu li {
+    color:#ffffff;
+    font-size: 20px;
+    list-style: none; /* Убрать маркеры списка */
+    margin: 10px 0; /* Пространство между элементами меню */
+}
+
+
+.menucounter {
+    /* Стили для блока .menucounter */
+    margin-top: auto; /* Поместить блок .menucounter внизу контейнера */
+    text-align: left;
+}
+    
+.menucounter p{
+    font-size: 15px;
+    color:#ffffff;
+}
+
+.menucounter span{
+    font-size: 15px;
+    color:#ffffff;
+}
+
+
+@media (max-width: 800px) {
+
+    .menu-container {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        flex-direction: row;
+        padding: 20px;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu li {
+        font-size: 15px;
+    }
+
+    .menucounter {
+        /* Стили для блока .menucounter */
+        margin-top: 0; /* Поместить блок .menucounter внизу контейнера */
+        text-align: left;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .menu li {
+        font-size: 10px;
+    }
+
+
+    .menu-container {
+        padding: 5px;
+    }
+}
+
+
+
+/* Начало стилей таймера */
+.flexcounter {
+    align-items: center;
+    display: flex;
+    box-sizing: border-box;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 10px;
+
+}
+
+.vhpage {
+    height: 100vh;
+}
+/* general styling */
+:root {
+    --smaller: .75;
+    }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+    
+.vhpage {
+    color: #ffffff;
+}
+.container {
+    color: #ffffff;
+    margin: 0 auto;
+    text-align: center;
+}
+    
+h1 {
+    font-weight: normal;
+    letter-spacing: .125rem;
+    text-transform: uppercase;
+}
+    
+li {
+    display: inline-block;
+    font-size: 1.5em;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+}
+    
+li span {
+    display: block;
+    font-size: 4.5rem;
+}
+    
+
+    
+
+@media all and (max-width: 768px) {
+    
+h1 {
+    font-size: calc(1.5rem * var(--smaller));
+}
+    
+li {
+    font-size: calc(1.125rem * var(--smaller));
+}
+    
+li span {
+    font-size: calc(3.375rem * var(--smaller));
+}
+    }
+
+/* Конец стилей таймера */
+
+
+
+/* Стили полей ввода информации */
+
+/* .inputarea {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+} */
+
+form span {
+    color: #ffffff;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+input[type=submit] {
+    width: 100px;
+    margin-left: 90px;
+}
+
+form {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+/* новый таймер */
+
+#newtimer2 {
+    display: none;
+}

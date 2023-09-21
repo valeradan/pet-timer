@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./css/custom.css" rel="stylesheet">
+</head>
+<body>
+    <div class="menu-container">
+        <div class="menu">
+            <ul class="timers">
+                <li><a href="index.html">Таймер1</a></li>
+                <li id="newtimer2"><a href="timer2.html">Таймер2</a></li>
+                <li id="newtimer3">Таймер 3</li>
+            </ul>
+            <button class="newtimers">+</button>
+            <button class="deletetimers">-</button>
+        </div>
+        <div class="menucounter">
+            <p>Кол-во счетчиков:</p>
+            <span id="count"></span>
+        </div>
+    </div>
+    <div class="vhpage">
+        <div class="flexcounter">       
+                <form name="publish" id="publish-form1">
+                    <span>Введите дату и время</span>
+                    <input type="datetime-local" name="datehere" id="datehere" class="date">
+                    <br>
+                    <span>Введите название таймера</span>
+                    <input type="text" name="message" id="message" maxlength="50">
+                    <br>
+                    <input class="button" type="submit" value="Применить"/>
+                </form>
+    
+            <div class="container">
+                <h1 id="headline">Здесь будет название таймера</h1>
+                    <div id="countdown">
+                    <ul>
+                    <li><span id="days"></span>Дней</li>
+                    <li><span id="hours"></span>Часов</li>
+                    <li><span id="minutes"></span>Минут</li>
+                    <li><span id="seconds"></span>Секунд</li>
+                    </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+    
+
+<script src="./js/timer.js"></script>
+</body>
+</html>
